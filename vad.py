@@ -98,12 +98,12 @@ def vadFile(filename):
 # for directory in os.listdir("."):
 #     if not directory=="__pycache__" and os.path.isdir(directory):
 #         for filename in os.listdir(directory):
-#             if filename.endswith(".wav"):
+#             if filename.endswith(".wav") and filename != "karplus.wav":
 #                 pathFile=directory+"/"+filename
 #                 vadFile(pathFile)
 
 
 
 for filename in os.listdir("."):
-    if filename.endswith(".wav"):
+    if filename.endswith(".wav") and filename != "karplus.wav":
         vadFile(filename)
