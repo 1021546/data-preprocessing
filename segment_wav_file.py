@@ -10,7 +10,7 @@ for filename in os.listdir("."):
     	print(data)
     	print(len(data))
     	
-    	t1 = 1 * 1000 #Works in milliseconds
+    	t1 = 0.8 * 1000 #Works in milliseconds
     	# t2 = 2 * 1000
     	newAudio = AudioSegment.from_wav(filename)
 
