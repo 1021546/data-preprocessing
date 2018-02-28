@@ -15,6 +15,9 @@ pylab.axis('tight')
 # pylab.axis('off') # no axis
 # pylab.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[]) # Remove the white edge
 S = librosa.feature.melspectrogram(y=sig, sr=fs)
+print(S)
+print(S.shape)
+print()
 librosa.display.specshow(librosa.power_to_db(S, ref=np.max))
 pylab.colorbar(format='%+2.0f dB')
 pylab.show()
