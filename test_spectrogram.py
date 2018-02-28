@@ -6,10 +6,13 @@ sample_rate, samples = wavfile.read('10.wav')
 frequencies, times, spectogram = signal.spectrogram(samples, sample_rate)
 
 print(frequencies)
+print(frequencies.shape)
 print()
 print(times)
+print(times.shape)
 print()
 print(spectogram)
+print(spectogram.shape)
 print()
 
 plt.imshow(spectogram)
